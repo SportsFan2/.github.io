@@ -20,7 +20,7 @@ function drawSineWave() {
     ctx.lineWidth = 2.5;
     ctx.stroke();
     
-    t += 5; // Update time for animation
+    t += 2.5; // Update time for animation
     requestAnimationFrame(drawSineWave); // Recursive call to animate
 }
 
