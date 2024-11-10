@@ -7,8 +7,8 @@ function drawSineWave() {
     ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear the canvas
     ctx.beginPath();
     
-    const amplitude = 50; // Height of the sine wave
-    const frequency = 0.05; // Frequency of the sine wave
+    const amplitude = 35; // Height of the sine wave
+    const frequency = 0.10; // Frequency of the sine wave
 
     for (let x = 0; x < canvas.width; x++) {
         // Calculate y position of each point
@@ -16,8 +16,8 @@ function drawSineWave() {
         ctx.lineTo(x, y);
     }
 
-    ctx.strokeStyle = "#0077be";
-    ctx.lineWidth = 2;
+    ctx.strokeStyle = "#242424";
+    ctx.lineWidth = 2.5;
     ctx.stroke();
     
     t += 5; // Update time for animation
